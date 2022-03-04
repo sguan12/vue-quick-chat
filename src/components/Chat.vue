@@ -13,6 +13,7 @@
                         :profile-picture-config="profilePictureConfig"
                         :timestamp-config="timestampConfig"
                         @onImageClicked="onImageClicked"/>
+        <slot name="footer"></slot>
         <MessageManager :colors="colors"
                         :border-style="borderStyle" :submit-icon-size="submitIconSize"
                         :submit-image-icon-size="submitImageIconSize"
